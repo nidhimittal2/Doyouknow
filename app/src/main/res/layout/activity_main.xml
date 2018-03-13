@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nidhimittal.doyouknow.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/solarsystem" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="1.Which planet is nearest to the earth?"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Venus"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+
+                    android:text="Mars"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/question1_choice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Mercury"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/question2_answer"
+                android:paddingTop="16dp"
+                android:text="2.Name the largest planet in our solar system."
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/question2_answer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/holo_purple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="3.Which of the following is/are stars?"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/question3_choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/question3_choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neptune"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/question3_choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moon"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/question4_answer"
+                android:paddingTop="16dp"
+                android:text="4.Which star is called Earth’s satellite?"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/question4_answer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/holo_purple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="5.Which is the coldest of all planets?"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uranus"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/question5_choice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pluto"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Venus"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:background="@android:color/darker_gray"
+                android:onClick="submitAnswers"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
